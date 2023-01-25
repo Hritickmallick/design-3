@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav-row{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    border-right: 1px solid;
+
+}
+
+.nav-row > ul > li{
+    padding: 0px 10px;
+}
+
+.fa-chevron-down{
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+#search{
+    margin-left: 10px;
+   width: 56px;
+    color: #4214a9;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto';
+    outline: none;
+    display: inline;
+}
+
+
+.section-banner{
+    background-image: url(../Images/banner.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height:600px;
+    position: relative;
+    background-position: center;
+}
+
+.overlay-img{
+    background-image: url(../Images/slash.png);
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0%;
+    left: -70%;
+    opacity: 0.8;
+}
+
+.section-banner::before{
+   
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    content: "";
+   opacity: 0.1;
+
+}
+
+.banner-content{
+    position: relative;
+    padding: 40px;
+}
+
+.banner-stats{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 50px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.banner-stats::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+filter: blur(8px);
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to right, transparent, #87878729);
+    backdrop-filter: blur(10px);
+}
+
+.banner-details{
+    width: 16.6%;
+    position: relative;
+}
+
+.banner-heading{
+    font-size: 25px;
+    color: #fff;
+}
+
+.banner-link{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    display: inline;
+}
+
+.banner-link > a{
+    color: #fff;
+}
+
+.banner-details-6{
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.banner-details-6 > a{
+    color: #fff;
+}
+
+.banner-details-1{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    position: relative;
+}
+
+.icon{
+    padding-right: 15px;
+}
+
+.numbers{
+    text-align: center;
+}
+
+.p-1{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.p-2{
+    font-size: 12px;
+}
